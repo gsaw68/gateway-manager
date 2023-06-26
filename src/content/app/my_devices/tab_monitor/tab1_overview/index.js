@@ -29,7 +29,7 @@ import { useLocation } from 'react-router';
 import axios from 'axios';
 
 import { server_url } from 'src/api/app.js';
-import SimpleMap from './SimpleMap';
+// import SimpleMap from './SimpleMap';
 
 function Statistics() {
   const [device, setDevice] = useState([]);
@@ -73,7 +73,7 @@ function Statistics() {
     <Box>
       {loading ? <LinearProgress sx={{ m: 2 }} /> : false}
       <Grid marginBottom={2}>
-      <SimpleMap />
+      {/* <SimpleMap /> */}
       </Grid>
       <Grid container row-gap={1} spacing={3}>
         {/* color: 'inherit' | 'action' | 'disabled' | 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning' | string */}
@@ -125,18 +125,18 @@ function Statistics() {
           heading4_value={enable_disable(device.dhcp)}
           heading5_key={'IP'}
           heading5_value={device.ip}
-          // heading5_key={'Gateway'}
-          // heading5_value={device.gateway}
-          heading6_key={'Subnet'}
-          heading6_value={device.subnet}
-          heading7_key={'DNS1'}
-          heading7_value={device.dns1}
-          heading8_key={'DNS2'}
-          heading8_value={device.dns2}
-          heading9_key={'Broker Status'}
-          heading9_value={enable_disable(device.mqtt_wifi_status)}
-          heading10_key={'Broker URL'}
-          heading10_value={device.mqtt_wifi_url}
+          heading6_key={'Gateway'}
+          heading6_value={device.gateway}
+          heading7_key={'Subnet'}
+          heading7_value={device.subnet}
+          heading8_key={'DNS1'}
+          heading8_value={device.dns1}
+          heading9_key={'DNS2'}
+          heading9_value={device.dns2}
+          heading10_key={'Broker Status'}
+          heading10_value={enable_disable(device.mqtt_wifi_status)}
+          heading11_key={'Broker URL'}
+          heading11_value={device.mqtt_wifi_url}
           // heading11_key={'Broker Username'}
           // heading11_value={device.mqtt_wifi_user}
           // heading12_key={'Broker Password'}
