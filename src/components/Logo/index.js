@@ -111,7 +111,7 @@ function Logo() {
       <Hidden smDown>
         <LogoTextWrapper>
           <Tooltip title="Version 6.0.1" arrow placement="right">
-            <VersionBadge>v 6.0</VersionBadge>
+            <VersionBadge>v 6.0.1</VersionBadge>
           </Tooltip>
           <LogoText> Gateway Manager</LogoText>
         </LogoTextWrapper>
